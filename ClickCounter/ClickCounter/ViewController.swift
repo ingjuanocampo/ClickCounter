@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     }
 
     
-    @objc
+    @IBAction
     func changeBckView() {
         var color: UIColor = .cyan
         if colorToogle {
@@ -35,7 +35,7 @@ class ViewController: UIViewController {
         self.label?.text = "\(self.count)"
     }
 
-    @objc
+    @IBAction
     func decreamentCount() {
         self.count -= 1
         self.label?.text = "\(self.count)"
