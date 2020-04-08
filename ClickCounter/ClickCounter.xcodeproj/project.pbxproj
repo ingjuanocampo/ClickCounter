@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4741C372243D545D00285342 /* ColorSliderMixerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4741C371243D545D00285342 /* ColorSliderMixerController.swift */; };
 		47CDCB442438ECF4002AC858 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CDCB432438ECF4002AC858 /* AppDelegate.swift */; };
 		47CDCB462438ECF4002AC858 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CDCB452438ECF4002AC858 /* SceneDelegate.swift */; };
 		47CDCB482438ECF4002AC858 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CDCB472438ECF4002AC858 /* ViewController.swift */; };
@@ -15,6 +16,7 @@
 		47CDCB502438ECF5002AC858 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47CDCB4E2438ECF5002AC858 /* LaunchScreen.storyboard */; };
 		47CDCB5B2438ECF5002AC858 /* ClickCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CDCB5A2438ECF5002AC858 /* ClickCounterTests.swift */; };
 		47CDCB662438ECF5002AC858 /* ClickCounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CDCB652438ECF5002AC858 /* ClickCounterUITests.swift */; };
+		47CDCB74243921DD002AC858 /* ColorMixerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CDCB73243921DD002AC858 /* ColorMixerController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4741C371243D545D00285342 /* ColorSliderMixerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSliderMixerController.swift; sourceTree = "<group>"; };
 		47CDCB402438ECF4002AC858 /* ClickCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47CDCB432438ECF4002AC858 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47CDCB452438ECF4002AC858 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		47CDCB612438ECF5002AC858 /* ClickCounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClickCounterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47CDCB652438ECF5002AC858 /* ClickCounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickCounterUITests.swift; sourceTree = "<group>"; };
 		47CDCB672438ECF5002AC858 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47CDCB73243921DD002AC858 /* ColorMixerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorMixerController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				47CDCB4C2438ECF5002AC858 /* Assets.xcassets */,
 				47CDCB4E2438ECF5002AC858 /* LaunchScreen.storyboard */,
 				47CDCB512438ECF5002AC858 /* Info.plist */,
+				47CDCB73243921DD002AC858 /* ColorMixerController.swift */,
+				4741C371243D545D00285342 /* ColorSliderMixerController.swift */,
 			);
 			path = ClickCounter;
 			sourceTree = "<group>";
@@ -260,7 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				47CDCB482438ECF4002AC858 /* ViewController.swift in Sources */,
+				47CDCB74243921DD002AC858 /* ColorMixerController.swift in Sources */,
 				47CDCB442438ECF4002AC858 /* AppDelegate.swift in Sources */,
+				4741C372243D545D00285342 /* ColorSliderMixerController.swift in Sources */,
 				47CDCB462438ECF4002AC858 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
