@@ -377,6 +377,14 @@
                                     <action selector="onDialogPressed:" destination="YiP-BS-Ljn" eventType="touchUpInside" id="h44-XL-LNc"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dax-y4-Y6s">
+                                <rect key="frame" x="179" y="189" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="UIImage"/>
+                                <connections>
+                                    <action selector="onUimagePressed:" destination="YiP-BS-Ljn" eventType="touchUpInside" id="sH4-SD-P2x"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="9No-B1-JVH"/>
