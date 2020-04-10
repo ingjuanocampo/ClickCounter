@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		470C3663243E97CD00BF3F36 /* RollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470C3662243E97CD00BF3F36 /* RollViewController.swift */; };
 		470C3665243E981100BF3F36 /* DiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470C3664243E981100BF3F36 /* DiceViewController.swift */; };
+		470C3668243EB38500BF3F36 /* RoshamboSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470C3667243EB38500BF3F36 /* RoshamboSelectorController.swift */; };
+		470C366A243EB39B00BF3F36 /* RoshamboResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470C3669243EB39B00BF3F36 /* RoshamboResultController.swift */; };
+		470C3688243F8A8600BF3F36 /* RashamboGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470C3687243F8A8600BF3F36 /* RashamboGame.swift */; };
 		4741C372243D545D00285342 /* ColorSliderMixerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4741C371243D545D00285342 /* ColorSliderMixerController.swift */; };
 		4741C374243D734100285342 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4741C373243D734100285342 /* NavigationController.swift */; };
 		47CDCB442438ECF4002AC858 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CDCB432438ECF4002AC858 /* AppDelegate.swift */; };
 		47CDCB462438ECF4002AC858 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CDCB452438ECF4002AC858 /* SceneDelegate.swift */; };
 		47CDCB482438ECF4002AC858 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CDCB472438ECF4002AC858 /* ViewController.swift */; };
-		47CDCB4B2438ECF4002AC858 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47CDCB492438ECF4002AC858 /* Main.storyboard */; };
+		47CDCB4B2438ECF4002AC858 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47CDCB492438ECF4002AC858 /* Main.storyboard */; settings = {ASSET_TAGS = (rock, ); }; };
 		47CDCB4D2438ECF5002AC858 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47CDCB4C2438ECF5002AC858 /* Assets.xcassets */; };
 		47CDCB502438ECF5002AC858 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47CDCB4E2438ECF5002AC858 /* LaunchScreen.storyboard */; };
 		47CDCB5B2438ECF5002AC858 /* ClickCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CDCB5A2438ECF5002AC858 /* ClickCounterTests.swift */; };
@@ -42,6 +45,9 @@
 /* Begin PBXFileReference section */
 		470C3662243E97CD00BF3F36 /* RollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollViewController.swift; sourceTree = "<group>"; };
 		470C3664243E981100BF3F36 /* DiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceViewController.swift; sourceTree = "<group>"; };
+		470C3667243EB38500BF3F36 /* RoshamboSelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoshamboSelectorController.swift; sourceTree = "<group>"; };
+		470C3669243EB39B00BF3F36 /* RoshamboResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoshamboResultController.swift; sourceTree = "<group>"; };
+		470C3687243F8A8600BF3F36 /* RashamboGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RashamboGame.swift; sourceTree = "<group>"; };
 		4741C371243D545D00285342 /* ColorSliderMixerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSliderMixerController.swift; sourceTree = "<group>"; };
 		4741C373243D734100285342 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		47CDCB402438ECF4002AC858 /* ClickCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +101,24 @@
 			path = RollDice;
 			sourceTree = "<group>";
 		};
+		470C3666243EB36C00BF3F36 /* Roshambo */ = {
+			isa = PBXGroup;
+			children = (
+				470C3686243F8A0800BF3F36 /* model */,
+				470C3667243EB38500BF3F36 /* RoshamboSelectorController.swift */,
+				470C3669243EB39B00BF3F36 /* RoshamboResultController.swift */,
+			);
+			path = Roshambo;
+			sourceTree = "<group>";
+		};
+		470C3686243F8A0800BF3F36 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				470C3687243F8A8600BF3F36 /* RashamboGame.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		47CDCB372438ECF4002AC858 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +142,7 @@
 		47CDCB422438ECF4002AC858 /* ClickCounter */ = {
 			isa = PBXGroup;
 			children = (
+				470C3666243EB36C00BF3F36 /* Roshambo */,
 				470C3661243E978100BF3F36 /* RollDice */,
 				47CDCB432438ECF4002AC858 /* AppDelegate.swift */,
 				47CDCB452438ECF4002AC858 /* SceneDelegate.swift */,
@@ -213,6 +238,9 @@
 		47CDCB382438ECF4002AC858 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					rock,
+				);
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "juan ocampo";
@@ -284,9 +312,12 @@
 			files = (
 				47CDCB482438ECF4002AC858 /* ViewController.swift in Sources */,
 				4741C374243D734100285342 /* NavigationController.swift in Sources */,
+				470C3688243F8A8600BF3F36 /* RashamboGame.swift in Sources */,
 				47CDCB74243921DD002AC858 /* ColorMixerController.swift in Sources */,
+				470C366A243EB39B00BF3F36 /* RoshamboResultController.swift in Sources */,
 				470C3663243E97CD00BF3F36 /* RollViewController.swift in Sources */,
 				47CDCB442438ECF4002AC858 /* AppDelegate.swift in Sources */,
+				470C3668243EB38500BF3F36 /* RoshamboSelectorController.swift in Sources */,
 				4741C372243D545D00285342 /* ColorSliderMixerController.swift in Sources */,
 				47CDCB462438ECF4002AC858 /* SceneDelegate.swift in Sources */,
 				470C3665243E981100BF3F36 /* DiceViewController.swift in Sources */,
