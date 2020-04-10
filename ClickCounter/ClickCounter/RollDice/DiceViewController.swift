@@ -1,28 +1,19 @@
-//  DiceViewController.swift
-//  Dice
-//
-//  Created by Jason Schatz on 11/6/14.
-//  Copyright (c) 2014 Udacity. All rights reserved.
-//
+
 
 import Foundation
 import UIKit
 
-// MARK: DiceViewController: UIViewController
 
 class DiceViewController: UIViewController {
 
-    // MARK: Properties
     
     var firstValue: Int?
     var secondValue: Int?
     
-    // MARK: Outlets
     
     @IBOutlet var firstDie: UIImageView!
     @IBOutlet var secondDie: UIImageView!
     
-    // MARK: Life Cycle
     
     override func viewWillAppear(_ animated: Bool) {
         
@@ -50,9 +41,7 @@ class DiceViewController: UIViewController {
         }
     }
     
-    /**
-    * accepts a conditional Int, and returns an dice image, or nil
-    */
+
     func imageForValue(_ value: Int?) -> UIImage? {
         return nil
     }
@@ -61,9 +50,7 @@ class DiceViewController: UIViewController {
         dismiss()
     }
     
-    /**
-    *    dismiss this view controller
-    */
+
     private func dismiss() {
         self.dismiss(animated: true, completion: nil)
     }
