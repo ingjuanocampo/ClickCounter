@@ -1,7 +1,7 @@
 # Udacity iOS Nanodegree Examples 
 
-In this project you will find most of the Examples that are as challenges or as ToDo in the iOS nanodegree. 
-The idea is to share the way I did solve then and to keep it all in just one single project because they are tiny examples. 
+In this project you will find most of the Examples that are as challenges or ToDo in the iOS nanodegree. 
+The idea is to share the way I did solve then and to keep it all in just one single project because they are tiny but very usefull examples. 
 
 
 The app has an entry screen where you can select the example you want to review. Please see the following image: 
