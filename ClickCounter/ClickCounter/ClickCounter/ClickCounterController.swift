@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ClickCounterController: UIViewController {
     
     @IBOutlet var label : UILabel? = nil
     var count = 0

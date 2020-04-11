@@ -22,7 +22,7 @@
 		4741C374243D734100285342 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4741C373243D734100285342 /* NavigationController.swift */; };
 		47CDCB442438ECF4002AC858 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CDCB432438ECF4002AC858 /* AppDelegate.swift */; };
 		47CDCB462438ECF4002AC858 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CDCB452438ECF4002AC858 /* SceneDelegate.swift */; };
-		47CDCB482438ECF4002AC858 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CDCB472438ECF4002AC858 /* ViewController.swift */; };
+		47CDCB482438ECF4002AC858 /* ClickCounterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CDCB472438ECF4002AC858 /* ClickCounterController.swift */; };
 		47CDCB4B2438ECF4002AC858 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47CDCB492438ECF4002AC858 /* Main.storyboard */; settings = {ASSET_TAGS = (rock, ); }; };
 		47CDCB4D2438ECF5002AC858 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47CDCB4C2438ECF5002AC858 /* Assets.xcassets */; };
 		47CDCB502438ECF5002AC858 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47CDCB4E2438ECF5002AC858 /* LaunchScreen.storyboard */; };
@@ -65,7 +65,7 @@
 		47CDCB402438ECF4002AC858 /* ClickCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47CDCB432438ECF4002AC858 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47CDCB452438ECF4002AC858 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		47CDCB472438ECF4002AC858 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		47CDCB472438ECF4002AC858 /* ClickCounterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickCounterController.swift; sourceTree = "<group>"; };
 		47CDCB4A2438ECF4002AC858 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		47CDCB4C2438ECF5002AC858 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47CDCB4F2438ECF5002AC858 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -152,6 +152,31 @@
 			path = delegates;
 			sourceTree = "<group>";
 		};
+		470C36972442706000BF3F36 /* ClickCounter */ = {
+			isa = PBXGroup;
+			children = (
+				47CDCB472438ECF4002AC858 /* ClickCounterController.swift */,
+			);
+			path = ClickCounter;
+			sourceTree = "<group>";
+		};
+		470C3698244270B500BF3F36 /* ColorMixer */ = {
+			isa = PBXGroup;
+			children = (
+				47CDCB73243921DD002AC858 /* ColorMixerController.swift */,
+				4741C371243D545D00285342 /* ColorSliderMixerController.swift */,
+			);
+			path = ColorMixer;
+			sourceTree = "<group>";
+		};
+		470C3699244270D300BF3F36 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				4741C373243D734100285342 /* NavigationController.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		47CDCB372438ECF4002AC858 = {
 			isa = PBXGroup;
 			children = (
@@ -175,19 +200,18 @@
 		47CDCB422438ECF4002AC858 /* ClickCounter */ = {
 			isa = PBXGroup;
 			children = (
+				470C3699244270D300BF3F36 /* Navigation */,
+				470C3698244270B500BF3F36 /* ColorMixer */,
+				470C36972442706000BF3F36 /* ClickCounter */,
 				470C36892440D8F600BF3F36 /* TextDelelegate */,
 				470C3666243EB36C00BF3F36 /* Roshambo */,
 				470C3661243E978100BF3F36 /* RollDice */,
 				47CDCB432438ECF4002AC858 /* AppDelegate.swift */,
 				47CDCB452438ECF4002AC858 /* SceneDelegate.swift */,
-				47CDCB472438ECF4002AC858 /* ViewController.swift */,
 				47CDCB492438ECF4002AC858 /* Main.storyboard */,
 				47CDCB4C2438ECF5002AC858 /* Assets.xcassets */,
 				47CDCB4E2438ECF5002AC858 /* LaunchScreen.storyboard */,
 				47CDCB512438ECF5002AC858 /* Info.plist */,
-				47CDCB73243921DD002AC858 /* ColorMixerController.swift */,
-				4741C371243D545D00285342 /* ColorSliderMixerController.swift */,
-				4741C373243D734100285342 /* NavigationController.swift */,
 			);
 			path = ClickCounter;
 			sourceTree = "<group>";
@@ -344,7 +368,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47CDCB482438ECF4002AC858 /* ViewController.swift in Sources */,
+				47CDCB482438ECF4002AC858 /* ClickCounterController.swift in Sources */,
 				4741C374243D734100285342 /* NavigationController.swift in Sources */,
 				470C3688243F8A8600BF3F36 /* RashamboGame.swift in Sources */,
 				47CDCB74243921DD002AC858 /* ColorMixerController.swift in Sources */,
