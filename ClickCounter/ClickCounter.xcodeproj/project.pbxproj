@@ -12,6 +12,12 @@
 		470C3668243EB38500BF3F36 /* RoshamboSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470C3667243EB38500BF3F36 /* RoshamboSelectorController.swift */; };
 		470C366A243EB39B00BF3F36 /* RoshamboResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470C3669243EB39B00BF3F36 /* RoshamboResultController.swift */; };
 		470C3688243F8A8600BF3F36 /* RashamboGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470C3687243F8A8600BF3F36 /* RashamboGame.swift */; };
+		470C368B2440D91800BF3F36 /* EmojiTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470C368A2440D91800BF3F36 /* EmojiTextFieldDelegate.swift */; };
+		470C368D2440D94000BF3F36 /* ColorizerTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470C368C2440D94000BF3F36 /* ColorizerTextFieldDelegate.swift */; };
+		470C36902440D9A800BF3F36 /* TextDelegateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470C368F2440D9A800BF3F36 /* TextDelegateController.swift */; };
+		470C36922440E11E00BF3F36 /* RandomColorTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470C36912440E11E00BF3F36 /* RandomColorTextFieldDelegate.swift */; };
+		470C3694244103AA00BF3F36 /* ZipcodeTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470C3693244103AA00BF3F36 /* ZipcodeTextFieldDelegate.swift */; };
+		470C369624410CF700BF3F36 /* ChashTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470C369524410CF700BF3F36 /* ChashTextFieldDelegate.swift */; };
 		4741C372243D545D00285342 /* ColorSliderMixerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4741C371243D545D00285342 /* ColorSliderMixerController.swift */; };
 		4741C374243D734100285342 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4741C373243D734100285342 /* NavigationController.swift */; };
 		47CDCB442438ECF4002AC858 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CDCB432438ECF4002AC858 /* AppDelegate.swift */; };
@@ -48,6 +54,12 @@
 		470C3667243EB38500BF3F36 /* RoshamboSelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoshamboSelectorController.swift; sourceTree = "<group>"; };
 		470C3669243EB39B00BF3F36 /* RoshamboResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoshamboResultController.swift; sourceTree = "<group>"; };
 		470C3687243F8A8600BF3F36 /* RashamboGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RashamboGame.swift; sourceTree = "<group>"; };
+		470C368A2440D91800BF3F36 /* EmojiTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTextFieldDelegate.swift; sourceTree = "<group>"; };
+		470C368C2440D94000BF3F36 /* ColorizerTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorizerTextFieldDelegate.swift; sourceTree = "<group>"; };
+		470C368F2440D9A800BF3F36 /* TextDelegateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextDelegateController.swift; sourceTree = "<group>"; };
+		470C36912440E11E00BF3F36 /* RandomColorTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColorTextFieldDelegate.swift; sourceTree = "<group>"; };
+		470C3693244103AA00BF3F36 /* ZipcodeTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipcodeTextFieldDelegate.swift; sourceTree = "<group>"; };
+		470C369524410CF700BF3F36 /* ChashTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChashTextFieldDelegate.swift; sourceTree = "<group>"; };
 		4741C371243D545D00285342 /* ColorSliderMixerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSliderMixerController.swift; sourceTree = "<group>"; };
 		4741C373243D734100285342 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		47CDCB402438ECF4002AC858 /* ClickCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +131,27 @@
 			path = model;
 			sourceTree = "<group>";
 		};
+		470C36892440D8F600BF3F36 /* TextDelelegate */ = {
+			isa = PBXGroup;
+			children = (
+				470C368E2440D97B00BF3F36 /* delegates */,
+				470C368F2440D9A800BF3F36 /* TextDelegateController.swift */,
+			);
+			path = TextDelelegate;
+			sourceTree = "<group>";
+		};
+		470C368E2440D97B00BF3F36 /* delegates */ = {
+			isa = PBXGroup;
+			children = (
+				470C368A2440D91800BF3F36 /* EmojiTextFieldDelegate.swift */,
+				470C368C2440D94000BF3F36 /* ColorizerTextFieldDelegate.swift */,
+				470C36912440E11E00BF3F36 /* RandomColorTextFieldDelegate.swift */,
+				470C3693244103AA00BF3F36 /* ZipcodeTextFieldDelegate.swift */,
+				470C369524410CF700BF3F36 /* ChashTextFieldDelegate.swift */,
+			);
+			path = delegates;
+			sourceTree = "<group>";
+		};
 		47CDCB372438ECF4002AC858 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +175,7 @@
 		47CDCB422438ECF4002AC858 /* ClickCounter */ = {
 			isa = PBXGroup;
 			children = (
+				470C36892440D8F600BF3F36 /* TextDelelegate */,
 				470C3666243EB36C00BF3F36 /* Roshambo */,
 				470C3661243E978100BF3F36 /* RollDice */,
 				47CDCB432438ECF4002AC858 /* AppDelegate.swift */,
@@ -321,6 +355,12 @@
 				4741C372243D545D00285342 /* ColorSliderMixerController.swift in Sources */,
 				47CDCB462438ECF4002AC858 /* SceneDelegate.swift in Sources */,
 				470C3665243E981100BF3F36 /* DiceViewController.swift in Sources */,
+				470C3694244103AA00BF3F36 /* ZipcodeTextFieldDelegate.swift in Sources */,
+				470C36902440D9A800BF3F36 /* TextDelegateController.swift in Sources */,
+				470C368B2440D91800BF3F36 /* EmojiTextFieldDelegate.swift in Sources */,
+				470C369624410CF700BF3F36 /* ChashTextFieldDelegate.swift in Sources */,
+				470C368D2440D94000BF3F36 /* ColorizerTextFieldDelegate.swift in Sources */,
+				470C36922440E11E00BF3F36 /* RandomColorTextFieldDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
