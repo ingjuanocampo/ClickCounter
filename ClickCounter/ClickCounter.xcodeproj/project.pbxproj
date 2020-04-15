@@ -20,6 +20,7 @@
 		470C369624410CF700BF3F36 /* ChashTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470C369524410CF700BF3F36 /* ChashTextFieldDelegate.swift */; };
 		4741C372243D545D00285342 /* ColorSliderMixerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4741C371243D545D00285342 /* ColorSliderMixerController.swift */; };
 		4741C374243D734100285342 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4741C373243D734100285342 /* NavigationController.swift */; };
+		47AE7AD72446AAA80093C604 /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AE7AD62446AAA80093C604 /* TableController.swift */; };
 		47CDCB442438ECF4002AC858 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CDCB432438ECF4002AC858 /* AppDelegate.swift */; };
 		47CDCB462438ECF4002AC858 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CDCB452438ECF4002AC858 /* SceneDelegate.swift */; };
 		47CDCB482438ECF4002AC858 /* ClickCounterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CDCB472438ECF4002AC858 /* ClickCounterController.swift */; };
@@ -62,6 +63,7 @@
 		470C369524410CF700BF3F36 /* ChashTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChashTextFieldDelegate.swift; sourceTree = "<group>"; };
 		4741C371243D545D00285342 /* ColorSliderMixerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSliderMixerController.swift; sourceTree = "<group>"; };
 		4741C373243D734100285342 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		47AE7AD62446AAA80093C604 /* TableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
 		47CDCB402438ECF4002AC858 /* ClickCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47CDCB432438ECF4002AC858 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47CDCB452438ECF4002AC858 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -177,6 +179,14 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		47AE7AD52446AA740093C604 /* Tables */ = {
+			isa = PBXGroup;
+			children = (
+				47AE7AD62446AAA80093C604 /* TableController.swift */,
+			);
+			path = Tables;
+			sourceTree = "<group>";
+		};
 		47CDCB372438ECF4002AC858 = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +210,7 @@
 		47CDCB422438ECF4002AC858 /* ClickCounter */ = {
 			isa = PBXGroup;
 			children = (
+				47AE7AD52446AA740093C604 /* Tables */,
 				470C3699244270D300BF3F36 /* Navigation */,
 				470C3698244270B500BF3F36 /* ColorMixer */,
 				470C36972442706000BF3F36 /* ClickCounter */,
@@ -380,6 +391,7 @@
 				47CDCB462438ECF4002AC858 /* SceneDelegate.swift in Sources */,
 				470C3665243E981100BF3F36 /* DiceViewController.swift in Sources */,
 				470C3694244103AA00BF3F36 /* ZipcodeTextFieldDelegate.swift in Sources */,
+				47AE7AD72446AAA80093C604 /* TableController.swift in Sources */,
 				470C36902440D9A800BF3F36 /* TextDelegateController.swift in Sources */,
 				470C368B2440D91800BF3F36 /* EmojiTextFieldDelegate.swift in Sources */,
 				470C369624410CF700BF3F36 /* ChashTextFieldDelegate.swift in Sources */,
