@@ -11,16 +11,21 @@ import UIKit
 class RoshamboSelectorController: UIViewController {
 
     var game : RashamboGame? = nil
+    var gamePlay = GamePlay.getGamePlayInstance()
 
     @IBAction func onRockSelected(_ sender: Any) {
         game = RashamboGame(selectedOption: .ROCK, rivalOption:  getRivalSelection())
         
         game?.calculateWinnerResults()
         
+        if let gameResult = game?.gameResult {
+            gamePlay.history.append(gameResult)
+        }
+        
         let controller = self.storyboard?.instantiateViewController(withIdentifier: "RoshamboResultController") as! RoshamboResultController
         
-        controller.resultImageRef = game?.visualResourceResult ?? ""
-        controller.textResult = game?.textResult ?? ""
+        controller.resultImageRef = game?.gameResult?.visualResourceResult ?? ""
+        controller.textResult = game?.gameResult?.textResult ?? ""
         
         present(controller, animated: true, completion: nil)
     }
@@ -29,12 +34,14 @@ class RoshamboSelectorController: UIViewController {
         game = RashamboGame(selectedOption: .SCISSORS, rivalOption:  getRivalSelection())
         
         game?.calculateWinnerResults()
+        if let gameResult = game?.gameResult {
+            gamePlay.history.append(gameResult)
+        }
         
         performSegue(withIdentifier: "scissorsSegue", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
         
         if segue.destination is RoshamboResultController {
             let controller = segue.destination as! RoshamboResultController
@@ -43,21 +50,19 @@ class RoshamboSelectorController: UIViewController {
 
                 game = RashamboGame(selectedOption: .PAPPER, rivalOption:  getRivalSelection())
                 game?.calculateWinnerResults()
+                if let gameResult = game?.gameResult {
+                    gamePlay.history.append(gameResult)
+                }
             }
 
-            controller.resultImageRef = game?.visualResourceResult ?? ""
-            controller.textResult = game?.textResult ?? ""
+            controller.resultImageRef = game?.gameResult?.visualResourceResult ?? ""
+            controller.textResult = game?.gameResult?.textResult ?? ""
             
-            
+        } else if segue.destination is GamePlayHistoryController {
+            let controller = segue.destination as! GamePlayHistoryController
+            controller.history = gamePlay.history
         }
     
-        
     }
-    
-    
-    
-    
-    
-    
 
 }

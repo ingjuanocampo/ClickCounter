@@ -20,6 +20,8 @@
 		470C369624410CF700BF3F36 /* ChashTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470C369524410CF700BF3F36 /* ChashTextFieldDelegate.swift */; };
 		472B7A232447B414000A79D9 /* VillianData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472B7A222447B414000A79D9 /* VillianData.swift */; };
 		472B7A252447B5BC000A79D9 /* VillansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472B7A242447B5BC000A79D9 /* VillansViewController.swift */; };
+		472B7A2724480BCC000A79D9 /* GamePlayHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472B7A2624480BCC000A79D9 /* GamePlayHistoryController.swift */; };
+		472B7A29244902F3000A79D9 /* GamePlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472B7A28244902F3000A79D9 /* GamePlay.swift */; };
 		4741C372243D545D00285342 /* ColorSliderMixerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4741C371243D545D00285342 /* ColorSliderMixerController.swift */; };
 		4741C374243D734100285342 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4741C373243D734100285342 /* NavigationController.swift */; };
 		47AE7AD72446AAA80093C604 /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AE7AD62446AAA80093C604 /* TableController.swift */; };
@@ -65,6 +67,8 @@
 		470C369524410CF700BF3F36 /* ChashTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChashTextFieldDelegate.swift; sourceTree = "<group>"; };
 		472B7A222447B414000A79D9 /* VillianData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillianData.swift; sourceTree = "<group>"; };
 		472B7A242447B5BC000A79D9 /* VillansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillansViewController.swift; sourceTree = "<group>"; };
+		472B7A2624480BCC000A79D9 /* GamePlayHistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayHistoryController.swift; sourceTree = "<group>"; };
+		472B7A28244902F3000A79D9 /* GamePlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlay.swift; sourceTree = "<group>"; };
 		4741C371243D545D00285342 /* ColorSliderMixerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSliderMixerController.swift; sourceTree = "<group>"; };
 		4741C373243D734100285342 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		47AE7AD62446AAA80093C604 /* TableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
@@ -125,6 +129,7 @@
 				470C3686243F8A0800BF3F36 /* model */,
 				470C3667243EB38500BF3F36 /* RoshamboSelectorController.swift */,
 				470C3669243EB39B00BF3F36 /* RoshamboResultController.swift */,
+				472B7A2624480BCC000A79D9 /* GamePlayHistoryController.swift */,
 			);
 			path = Roshambo;
 			sourceTree = "<group>";
@@ -133,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				470C3687243F8A8600BF3F36 /* RashamboGame.swift */,
+				472B7A28244902F3000A79D9 /* GamePlay.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -399,10 +405,12 @@
 				47CDCB74243921DD002AC858 /* ColorMixerController.swift in Sources */,
 				470C366A243EB39B00BF3F36 /* RoshamboResultController.swift in Sources */,
 				470C3663243E97CD00BF3F36 /* RollViewController.swift in Sources */,
+				472B7A2724480BCC000A79D9 /* GamePlayHistoryController.swift in Sources */,
 				472B7A232447B414000A79D9 /* VillianData.swift in Sources */,
 				47CDCB442438ECF4002AC858 /* AppDelegate.swift in Sources */,
 				470C3668243EB38500BF3F36 /* RoshamboSelectorController.swift in Sources */,
 				4741C372243D545D00285342 /* ColorSliderMixerController.swift in Sources */,
+				472B7A29244902F3000A79D9 /* GamePlay.swift in Sources */,
 				47CDCB462438ECF4002AC858 /* SceneDelegate.swift in Sources */,
 				470C3665243E981100BF3F36 /* DiceViewController.swift in Sources */,
 				470C3694244103AA00BF3F36 /* ZipcodeTextFieldDelegate.swift in Sources */,
