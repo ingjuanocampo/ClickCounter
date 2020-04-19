@@ -17,7 +17,6 @@ class RoshamboSelectorController: UIViewController {
         game = RashamboGame(selectedOption: .ROCK, rivalOption:  getRivalSelection())
         
         game?.calculateWinnerResults()
-        
         if let gameResult = game?.gameResult {
             gamePlay.history.append(gameResult)
         }
@@ -26,8 +25,8 @@ class RoshamboSelectorController: UIViewController {
         
         controller.resultImageRef = game?.gameResult?.visualResourceResult ?? ""
         controller.textResult = game?.gameResult?.textResult ?? ""
-        
-        present(controller, animated: true, completion: nil)
+                
+        navigationController?.pushViewController(controller, animated: true)
     }
     
     @IBAction func onScissorsSelected(_ sender: Any) {

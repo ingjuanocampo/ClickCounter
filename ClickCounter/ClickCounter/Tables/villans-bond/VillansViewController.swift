@@ -16,7 +16,15 @@ class VillansViewController: UIViewController, UITableViewDataSource, UITableVie
     // Get ahold of some villains, for the table
     // This is an array of Villain instances
     let allVillains = Villain.allVillains
-
+    @IBOutlet weak var tableview: UITableView!
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableview.delegate = self
+    }
+    
+    
     // MARK: Table View Data Source
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -38,9 +46,11 @@ class VillansViewController: UIViewController, UITableViewDataSource, UITableVie
 
         return cell
     }
-
-    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        return true
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailController = storyboard?.instantiateViewController(withIdentifier: "VillainDetailViewController") as! VillainDetailViewController
+        detailController.villian = allVillains[indexPath.row]
+        navigationController?.pushViewController(detailController, animated: true)
     }
 }
 

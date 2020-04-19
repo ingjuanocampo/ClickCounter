@@ -26,11 +26,15 @@ class RoshamboResultController: UIViewController {
             resultLabel?.text = textResult
         }
         
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Start Over", style: .plain, target: self, action: #selector(startOver))
     }
     
+    @objc func startOver() {
+        navigationController?.popToRootViewController(animated: true)
+    }
     
     @IBAction func playBackPressed(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        navigationController?.popViewController(animated: true)
     }
     
 }
