@@ -23,6 +23,24 @@
 		472B7A2724480BCC000A79D9 /* GamePlayHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472B7A2624480BCC000A79D9 /* GamePlayHistoryController.swift */; };
 		472B7A29244902F3000A79D9 /* GamePlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472B7A28244902F3000A79D9 /* GamePlay.swift */; };
 		473EA5D9244CC8EF0021E9E6 /* VillainDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473EA5D8244CC8EF0021E9E6 /* VillainDetailViewController.swift */; };
+		473EA5F1244D07390021E9E6 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		473EA5F2244D07390021E9E6 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		473EA5F3244D07390021E9E6 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		473EA5F4244D07390021E9E6 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		473EA5FA244D08B20021E9E6 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		473EA5FB244D08B20021E9E6 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		473EA5FC244D08B20021E9E6 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		473EA5FD244D08B20021E9E6 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		473EA5FF244D12750021E9E6 /* RootTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473EA5FE244D12750021E9E6 /* RootTableViewController.swift */; };
+		473EA601244D12A00021E9E6 /* StoryNodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473EA600244D12A00021E9E6 /* StoryNodeViewController.swift */; };
+		473EA606244D17A20021E9E6 /* Adventure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473EA602244D17A20021E9E6 /* Adventure.swift */; };
+		473EA607244D17A20021E9E6 /* Credits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473EA603244D17A20021E9E6 /* Credits.swift */; };
+		473EA608244D17A20021E9E6 /* StoryNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473EA604244D17A20021E9E6 /* StoryNode.swift */; };
+		473EA609244D17A20021E9E6 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473EA605244D17A20021E9E6 /* Connection.swift */; };
+		473EA60E244D1A4F0021E9E6 /* Harp.plist in Resources */ = {isa = PBXBuildFile; fileRef = 473EA60A244D1A4F0021E9E6 /* Harp.plist */; };
+		473EA60F244D1A4F0021E9E6 /* HauntedHouse.plist in Resources */ = {isa = PBXBuildFile; fileRef = 473EA60B244D1A4F0021E9E6 /* HauntedHouse.plist */; };
+		473EA610244D1A4F0021E9E6 /* Stranger.plist in Resources */ = {isa = PBXBuildFile; fileRef = 473EA60C244D1A4F0021E9E6 /* Stranger.plist */; };
+		473EA611244D1A4F0021E9E6 /* Tiger.plist in Resources */ = {isa = PBXBuildFile; fileRef = 473EA60D244D1A4F0021E9E6 /* Tiger.plist */; };
 		4741C372243D545D00285342 /* ColorSliderMixerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4741C371243D545D00285342 /* ColorSliderMixerController.swift */; };
 		4741C374243D734100285342 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4741C373243D734100285342 /* NavigationController.swift */; };
 		47AE7AD72446AAA80093C604 /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AE7AD62446AAA80093C604 /* TableController.swift */; };
@@ -71,6 +89,16 @@
 		472B7A2624480BCC000A79D9 /* GamePlayHistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayHistoryController.swift; sourceTree = "<group>"; };
 		472B7A28244902F3000A79D9 /* GamePlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlay.swift; sourceTree = "<group>"; };
 		473EA5D8244CC8EF0021E9E6 /* VillainDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillainDetailViewController.swift; sourceTree = "<group>"; };
+		473EA5FE244D12750021E9E6 /* RootTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTableViewController.swift; sourceTree = "<group>"; };
+		473EA600244D12A00021E9E6 /* StoryNodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryNodeViewController.swift; sourceTree = "<group>"; };
+		473EA602244D17A20021E9E6 /* Adventure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Adventure.swift; sourceTree = "<group>"; };
+		473EA603244D17A20021E9E6 /* Credits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credits.swift; sourceTree = "<group>"; };
+		473EA604244D17A20021E9E6 /* StoryNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryNode.swift; sourceTree = "<group>"; };
+		473EA605244D17A20021E9E6 /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		473EA60A244D1A4F0021E9E6 /* Harp.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Harp.plist; sourceTree = "<group>"; };
+		473EA60B244D1A4F0021E9E6 /* HauntedHouse.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HauntedHouse.plist; sourceTree = "<group>"; };
+		473EA60C244D1A4F0021E9E6 /* Stranger.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Stranger.plist; sourceTree = "<group>"; };
+		473EA60D244D1A4F0021E9E6 /* Tiger.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Tiger.plist; sourceTree = "<group>"; };
 		4741C371243D545D00285342 /* ColorSliderMixerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSliderMixerController.swift; sourceTree = "<group>"; };
 		4741C373243D734100285342 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		47AE7AD62446AAA80093C604 /* TableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
@@ -201,6 +229,27 @@
 			path = "villans-bond";
 			sourceTree = "<group>";
 		};
+		473EA5E5244D06C90021E9E6 /* MYO */ = {
+			isa = PBXGroup;
+			children = (
+				473EA5EC244D072F0021E9E6 /* model */,
+				473EA5FE244D12750021E9E6 /* RootTableViewController.swift */,
+				473EA600244D12A00021E9E6 /* StoryNodeViewController.swift */,
+			);
+			path = MYO;
+			sourceTree = "<group>";
+		};
+		473EA5EC244D072F0021E9E6 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				473EA602244D17A20021E9E6 /* Adventure.swift */,
+				473EA605244D17A20021E9E6 /* Connection.swift */,
+				473EA603244D17A20021E9E6 /* Credits.swift */,
+				473EA604244D17A20021E9E6 /* StoryNode.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		47AE7AD52446AA740093C604 /* Tables */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +282,11 @@
 		47CDCB422438ECF4002AC858 /* ClickCounter */ = {
 			isa = PBXGroup;
 			children = (
+				473EA60A244D1A4F0021E9E6 /* Harp.plist */,
+				473EA60B244D1A4F0021E9E6 /* HauntedHouse.plist */,
+				473EA60C244D1A4F0021E9E6 /* Stranger.plist */,
+				473EA60D244D1A4F0021E9E6 /* Tiger.plist */,
+				473EA5E5244D06C90021E9E6 /* MYO */,
 				47AE7AD52446AA740093C604 /* Tables */,
 				470C3699244270D300BF3F36 /* Navigation */,
 				470C3698244270B500BF3F36 /* ColorMixer */,
@@ -375,9 +429,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				473EA610244D1A4F0021E9E6 /* Stranger.plist in Resources */,
+				473EA5FB244D08B20021E9E6 /* (null) in Resources */,
 				47CDCB502438ECF5002AC858 /* LaunchScreen.storyboard in Resources */,
+				473EA60F244D1A4F0021E9E6 /* HauntedHouse.plist in Resources */,
 				47CDCB4D2438ECF5002AC858 /* Assets.xcassets in Resources */,
+				473EA5FD244D08B20021E9E6 /* (null) in Resources */,
+				473EA611244D1A4F0021E9E6 /* Tiger.plist in Resources */,
+				473EA5FA244D08B20021E9E6 /* (null) in Resources */,
 				47CDCB4B2438ECF4002AC858 /* Main.storyboard in Resources */,
+				473EA5FC244D08B20021E9E6 /* (null) in Resources */,
+				473EA60E244D1A4F0021E9E6 /* Harp.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,7 +465,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				47CDCB482438ECF4002AC858 /* ClickCounterController.swift in Sources */,
+				473EA609244D17A20021E9E6 /* Connection.swift in Sources */,
+				473EA5F2244D07390021E9E6 /* (null) in Sources */,
+				473EA607244D17A20021E9E6 /* Credits.swift in Sources */,
 				4741C374243D734100285342 /* NavigationController.swift in Sources */,
+				473EA5FF244D12750021E9E6 /* RootTableViewController.swift in Sources */,
 				470C3688243F8A8600BF3F36 /* RashamboGame.swift in Sources */,
 				47CDCB74243921DD002AC858 /* ColorMixerController.swift in Sources */,
 				470C366A243EB39B00BF3F36 /* RoshamboResultController.swift in Sources */,
@@ -416,14 +482,20 @@
 				472B7A29244902F3000A79D9 /* GamePlay.swift in Sources */,
 				473EA5D9244CC8EF0021E9E6 /* VillainDetailViewController.swift in Sources */,
 				47CDCB462438ECF4002AC858 /* SceneDelegate.swift in Sources */,
+				473EA608244D17A20021E9E6 /* StoryNode.swift in Sources */,
 				470C3665243E981100BF3F36 /* DiceViewController.swift in Sources */,
+				473EA5F3244D07390021E9E6 /* (null) in Sources */,
+				473EA601244D12A00021E9E6 /* StoryNodeViewController.swift in Sources */,
 				470C3694244103AA00BF3F36 /* ZipcodeTextFieldDelegate.swift in Sources */,
+				473EA5F1244D07390021E9E6 /* (null) in Sources */,
+				473EA5F4244D07390021E9E6 /* (null) in Sources */,
 				47AE7AD72446AAA80093C604 /* TableController.swift in Sources */,
 				470C36902440D9A800BF3F36 /* TextDelegateController.swift in Sources */,
 				470C368B2440D91800BF3F36 /* EmojiTextFieldDelegate.swift in Sources */,
 				470C369624410CF700BF3F36 /* ChashTextFieldDelegate.swift in Sources */,
 				470C368D2440D94000BF3F36 /* ColorizerTextFieldDelegate.swift in Sources */,
 				472B7A252447B5BC000A79D9 /* VillansViewController.swift in Sources */,
+				473EA606244D17A20021E9E6 /* Adventure.swift in Sources */,
 				470C36922440E11E00BF3F36 /* RandomColorTextFieldDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
