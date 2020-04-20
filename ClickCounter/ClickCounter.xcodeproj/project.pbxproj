@@ -232,6 +232,7 @@
 		473EA5E5244D06C90021E9E6 /* MYO */ = {
 			isa = PBXGroup;
 			children = (
+				473EA612244D27E70021E9E6 /* SupportingFiles */,
 				473EA5EC244D072F0021E9E6 /* model */,
 				473EA5FE244D12750021E9E6 /* RootTableViewController.swift */,
 				473EA600244D12A00021E9E6 /* StoryNodeViewController.swift */,
@@ -248,6 +249,17 @@
 				473EA604244D17A20021E9E6 /* StoryNode.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		473EA612244D27E70021E9E6 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				473EA60A244D1A4F0021E9E6 /* Harp.plist */,
+				473EA60B244D1A4F0021E9E6 /* HauntedHouse.plist */,
+				473EA60C244D1A4F0021E9E6 /* Stranger.plist */,
+				473EA60D244D1A4F0021E9E6 /* Tiger.plist */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		47AE7AD52446AA740093C604 /* Tables */ = {
@@ -282,10 +294,6 @@
 		47CDCB422438ECF4002AC858 /* ClickCounter */ = {
 			isa = PBXGroup;
 			children = (
-				473EA60A244D1A4F0021E9E6 /* Harp.plist */,
-				473EA60B244D1A4F0021E9E6 /* HauntedHouse.plist */,
-				473EA60C244D1A4F0021E9E6 /* Stranger.plist */,
-				473EA60D244D1A4F0021E9E6 /* Tiger.plist */,
 				473EA5E5244D06C90021E9E6 /* MYO */,
 				47AE7AD52446AA740093C604 /* Tables */,
 				470C3699244270D300BF3F36 /* Navigation */,
