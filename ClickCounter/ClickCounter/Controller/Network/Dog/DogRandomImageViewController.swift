@@ -21,7 +21,6 @@ class DogRandomImageViewController: UIViewController {
             }
             self.imageView.showUrlImage(url: dogImage.message ?? "")
         }
-    
     }
     
 }
