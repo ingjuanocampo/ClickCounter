@@ -19,25 +19,31 @@ class NetworkExercicesViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
     
-    @IBAction func onRequestPressed(_ sender: Any) {
+    
+    @IBAction func onDownloadPressed(_ sender: Any) {
         
-        guard let imageUrl = URL(string: KittenImageLocation.http.rawValue) else {
-            return
-        }
-        
-        let task = URLSession.shared.dataTask(with: imageUrl) { (data, resposne, erros) in
-            guard let data = data else { return }
-            
-            guard let image = UIImage(data: data) else {
+            guard let imageUrl = URL(string: KittenImageLocation.http.rawValue) else {
                 return
             }
-            DispatchQueue.main.async {
-                self.imageView.image = image
-            }
+            
+        let task = URLSession.shared.downloadTask(with: imageUrl) {location,_,_ in
+            
+            guard let location = location else { return }
+            print(location)
+            do {
+                let imageData = try Data(contentsOf: location)
+                let image = UIImage(data: imageData)
+                DispatchQueue.main.async {
+                               self.imageView.image = image
+                    }
+            } catch {}
         }
-        
         task.resume()
-        
-    
     }
+    
+    @IBAction func onRequestPressed(_ sender: Any) {
+        self.imageView.showUrlImage(url: KittenImageLocation.http.rawValue)
+    }
+
+        
 }

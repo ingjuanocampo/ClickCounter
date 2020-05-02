@@ -44,6 +44,11 @@
 		4741C372243D545D00285342 /* ColorSliderMixerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4741C371243D545D00285342 /* ColorSliderMixerController.swift */; };
 		4741C374243D734100285342 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4741C373243D734100285342 /* NavigationController.swift */; };
 		474506FE245CD925005B4440 /* NetworkExercicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474506FD245CD925005B4440 /* NetworkExercicesViewController.swift */; };
+		47450703245DC4E4005B4440 /* DogRandomImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47450702245DC4E4005B4440 /* DogRandomImageViewController.swift */; };
+		47450706245DC594005B4440 /* DogAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47450705245DC594005B4440 /* DogAPI.swift */; };
+		47450709245E0B19005B4440 /* ImageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47450708245E0B19005B4440 /* ImageUtils.swift */; };
+		4745070B245E0C9E005B4440 /* DogImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4745070A245E0C9E005B4440 /* DogImage.swift */; };
+		4745070D245E1420005B4440 /* ApiUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4745070C245E1420005B4440 /* ApiUtils.swift */; };
 		47AE7AD72446AAA80093C604 /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AE7AD62446AAA80093C604 /* TableController.swift */; };
 		47CDCB442438ECF4002AC858 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CDCB432438ECF4002AC858 /* AppDelegate.swift */; };
 		47CDCB462438ECF4002AC858 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CDCB452438ECF4002AC858 /* SceneDelegate.swift */; };
@@ -103,6 +108,11 @@
 		4741C371243D545D00285342 /* ColorSliderMixerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSliderMixerController.swift; sourceTree = "<group>"; };
 		4741C373243D734100285342 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		474506FD245CD925005B4440 /* NetworkExercicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkExercicesViewController.swift; sourceTree = "<group>"; };
+		47450702245DC4E4005B4440 /* DogRandomImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogRandomImageViewController.swift; sourceTree = "<group>"; };
+		47450705245DC594005B4440 /* DogAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogAPI.swift; sourceTree = "<group>"; };
+		47450708245E0B19005B4440 /* ImageUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUtils.swift; sourceTree = "<group>"; };
+		4745070A245E0C9E005B4440 /* DogImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImage.swift; sourceTree = "<group>"; };
+		4745070C245E1420005B4440 /* ApiUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUtils.swift; sourceTree = "<group>"; };
 		47AE7AD62446AAA80093C604 /* TableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
 		47CDCB402438ECF4002AC858 /* ClickCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47CDCB432438ECF4002AC858 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -267,6 +277,8 @@
 		474506FC245CD8FB005B4440 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				47450707245E0B04005B4440 /* Utils */,
+				47450701245DC484005B4440 /* Dog */,
 				474506FD245CD925005B4440 /* NetworkExercicesViewController.swift */,
 			);
 			path = Network;
@@ -298,6 +310,33 @@
 				470C3661243E978100BF3F36 /* RollDice */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		47450701245DC484005B4440 /* Dog */ = {
+			isa = PBXGroup;
+			children = (
+				47450704245DC57D005B4440 /* Model */,
+				47450702245DC4E4005B4440 /* DogRandomImageViewController.swift */,
+			);
+			path = Dog;
+			sourceTree = "<group>";
+		};
+		47450704245DC57D005B4440 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				47450705245DC594005B4440 /* DogAPI.swift */,
+				4745070A245E0C9E005B4440 /* DogImage.swift */,
+				4745070C245E1420005B4440 /* ApiUtils.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		47450707245E0B04005B4440 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				47450708245E0B19005B4440 /* ImageUtils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		47AE7AD52446AA740093C604 /* Tables */ = {
@@ -521,16 +560,21 @@
 				470C3665243E981100BF3F36 /* DiceViewController.swift in Sources */,
 				473EA5F3244D07390021E9E6 /* (null) in Sources */,
 				473EA601244D12A00021E9E6 /* StoryNodeViewController.swift in Sources */,
+				4745070B245E0C9E005B4440 /* DogImage.swift in Sources */,
+				47450709245E0B19005B4440 /* ImageUtils.swift in Sources */,
 				470C3694244103AA00BF3F36 /* ZipcodeTextFieldDelegate.swift in Sources */,
+				47450706245DC594005B4440 /* DogAPI.swift in Sources */,
 				473EA5F1244D07390021E9E6 /* (null) in Sources */,
 				473EA5F4244D07390021E9E6 /* (null) in Sources */,
 				47AE7AD72446AAA80093C604 /* TableController.swift in Sources */,
 				470C36902440D9A800BF3F36 /* TextDelegateController.swift in Sources */,
+				47450703245DC4E4005B4440 /* DogRandomImageViewController.swift in Sources */,
 				470C368B2440D91800BF3F36 /* EmojiTextFieldDelegate.swift in Sources */,
 				474506FE245CD925005B4440 /* NetworkExercicesViewController.swift in Sources */,
 				470C369624410CF700BF3F36 /* ChashTextFieldDelegate.swift in Sources */,
 				470C368D2440D94000BF3F36 /* ColorizerTextFieldDelegate.swift in Sources */,
 				472B7A252447B5BC000A79D9 /* VillansViewController.swift in Sources */,
+				4745070D245E1420005B4440 /* ApiUtils.swift in Sources */,
 				473EA606244D17A20021E9E6 /* Adventure.swift in Sources */,
 				470C36922440E11E00BF3F36 /* RandomColorTextFieldDelegate.swift in Sources */,
 			);

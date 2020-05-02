@@ -1336,12 +1336,54 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="vor-ld-Zmn" kind="relationship" relationship="rootViewController" id="elH-n5-UMO"/>
+                        <segue destination="9H6-NU-EaY" kind="relationship" relationship="rootViewController" id="s05-66-oLR"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yOf-cB-21M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="180" y="5331"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Jx0-5A-p6m">
+            <objects>
+                <viewController id="9H6-NU-EaY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EDE-o0-wHK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7vT-6s-4NY">
+                                <rect key="frame" x="8" y="56" width="398" height="68"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoh-Tz-KJF">
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="30"/>
+                                        <state key="normal" title="Network Image request"/>
+                                        <connections>
+                                            <segue destination="vor-ld-Zmn" kind="show" id="5my-p1-d7U"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e55-Nc-5gu">
+                                        <rect key="frame" x="0.0" y="38" width="398" height="30"/>
+                                        <state key="normal" title="Dogs App"/>
+                                        <connections>
+                                            <segue destination="Q1F-hR-xlM" kind="show" id="yVY-ix-1uf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7vT-6s-4NY" firstAttribute="top" secondItem="Fhp-4k-Acp" secondAttribute="top" id="A3V-yR-fB5"/>
+                            <constraint firstItem="Fhp-4k-Acp" firstAttribute="trailing" secondItem="7vT-6s-4NY" secondAttribute="trailing" constant="8" id="Y0T-JL-aWL"/>
+                            <constraint firstItem="7vT-6s-4NY" firstAttribute="leading" secondItem="Fhp-4k-Acp" secondAttribute="leading" constant="8" id="vJy-n7-TxQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Fhp-4k-Acp"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QHx-IL-wUU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IAL-9l-wNi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="886" y="5334"/>
         </scene>
         <!--Network Exercices View Controller-->
         <scene sceneID="3sU-YB-4WD">
@@ -1351,38 +1393,88 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZU3-5c-Wtc">
-                                <rect key="frame" x="184" y="417" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="onRequestPressed:" destination="vor-ld-Zmn" eventType="touchUpInside" id="LaB-aN-UIb"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eyS-ZQ-cLQ">
-                                <rect key="frame" x="12" y="68" width="390" height="728"/>
-                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="O02-gT-mGv">
+                                <rect key="frame" x="0.0" y="56" width="414" height="752"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fgO-As-RRV">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43V-iH-mUq">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="ahR-Sl-ycv"/>
+                                                </constraints>
+                                                <state key="normal" title="Http request"/>
+                                                <connections>
+                                                    <action selector="onRequestPressed:" destination="vor-ld-Zmn" eventType="touchUpInside" id="ysD-cc-hBR"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yjf-vj-D15">
+                                                <rect key="frame" x="0.0" y="60" width="414" height="60"/>
+                                                <state key="normal" title="Download request"/>
+                                                <connections>
+                                                    <action selector="onDownloadPressed:" destination="vor-ld-Zmn" eventType="touchUpInside" id="JNJ-38-JWk"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="43V-iH-mUq" firstAttribute="width" secondItem="yjf-vj-D15" secondAttribute="width" id="NnF-g4-jIA"/>
+                                            <constraint firstItem="43V-iH-mUq" firstAttribute="height" secondItem="yjf-vj-D15" secondAttribute="height" id="xu3-JI-dfF"/>
+                                        </constraints>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="TDJ-Y8-pQu">
+                                        <rect key="frame" x="0.0" y="120" width="414" height="632"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="eyS-ZQ-cLQ" firstAttribute="top" secondItem="SSd-jD-iB6" secondAttribute="top" constant="12" id="0ze-eP-ZWf"/>
-                            <constraint firstItem="eyS-ZQ-cLQ" firstAttribute="leading" secondItem="SSd-jD-iB6" secondAttribute="leading" constant="12" id="A8B-Qe-FOg"/>
-                            <constraint firstItem="ZU3-5c-Wtc" firstAttribute="centerX" secondItem="SSd-jD-iB6" secondAttribute="centerX" id="B0t-eM-u8Q"/>
-                            <constraint firstItem="ZU3-5c-Wtc" firstAttribute="centerY" secondItem="SSd-jD-iB6" secondAttribute="centerY" id="CZD-B6-124"/>
-                            <constraint firstItem="SSd-jD-iB6" firstAttribute="trailing" secondItem="eyS-ZQ-cLQ" secondAttribute="trailing" constant="12" id="TAV-E2-t3x"/>
-                            <constraint firstItem="SSd-jD-iB6" firstAttribute="bottom" secondItem="eyS-ZQ-cLQ" secondAttribute="bottom" constant="12" id="iKp-5Y-2qD"/>
-                            <constraint firstItem="eyS-ZQ-cLQ" firstAttribute="centerY" secondItem="SSd-jD-iB6" secondAttribute="centerY" id="izY-Iu-NbO"/>
-                            <constraint firstItem="eyS-ZQ-cLQ" firstAttribute="centerX" secondItem="SSd-jD-iB6" secondAttribute="centerX" id="qb1-sH-K5p"/>
+                            <constraint firstItem="SSd-jD-iB6" firstAttribute="trailing" secondItem="O02-gT-mGv" secondAttribute="trailing" id="LIC-hZ-WZg"/>
+                            <constraint firstItem="SSd-jD-iB6" firstAttribute="bottom" secondItem="O02-gT-mGv" secondAttribute="bottom" id="P67-xF-zs3"/>
+                            <constraint firstItem="O02-gT-mGv" firstAttribute="top" secondItem="SSd-jD-iB6" secondAttribute="top" id="XqJ-hv-bws"/>
+                            <constraint firstItem="O02-gT-mGv" firstAttribute="leading" secondItem="SSd-jD-iB6" secondAttribute="leading" id="dwp-hd-hC8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SSd-jD-iB6"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ywa-lG-B2h"/>
                     <connections>
-                        <outlet property="imageView" destination="eyS-ZQ-cLQ" id="c8w-oc-XbL"/>
+                        <outlet property="imageView" destination="TDJ-Y8-pQu" id="Mli-Dc-iZe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sEp-nU-iwi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="906" y="5330"/>
+            <point key="canvasLocation" x="1613" y="5334"/>
+        </scene>
+        <!--Dog Random Image View Controller-->
+        <scene sceneID="GvX-A3-Ffr">
+            <objects>
+                <viewController id="Q1F-hR-xlM" customClass="DogRandomImageViewController" customModule="ClickCounter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x1N-K9-lnH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jsj-gQ-aQT">
+                                <rect key="frame" x="0.0" y="56" width="414" height="752"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Jsj-gQ-aQT" firstAttribute="width" secondItem="K3p-7D-97Q" secondAttribute="width" id="Zht-Oq-nZy"/>
+                            <constraint firstItem="Jsj-gQ-aQT" firstAttribute="centerY" secondItem="K3p-7D-97Q" secondAttribute="centerY" id="b0f-hS-coL"/>
+                            <constraint firstItem="Jsj-gQ-aQT" firstAttribute="centerX" secondItem="K3p-7D-97Q" secondAttribute="centerX" id="gMJ-wg-wbe"/>
+                            <constraint firstItem="Jsj-gQ-aQT" firstAttribute="height" secondItem="K3p-7D-97Q" secondAttribute="height" id="o6b-z4-XOU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="K3p-7D-97Q"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0Zr-as-xfP"/>
+                    <connections>
+                        <outlet property="imageView" destination="Jsj-gQ-aQT" id="mwA-RU-zWs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qmI-8k-DFy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2322" y="5338"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="rN6-6f-DY9">
