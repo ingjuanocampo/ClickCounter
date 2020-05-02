@@ -43,6 +43,7 @@
 		473EA611244D1A4F0021E9E6 /* Tiger.plist in Resources */ = {isa = PBXBuildFile; fileRef = 473EA60D244D1A4F0021E9E6 /* Tiger.plist */; };
 		4741C372243D545D00285342 /* ColorSliderMixerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4741C371243D545D00285342 /* ColorSliderMixerController.swift */; };
 		4741C374243D734100285342 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4741C373243D734100285342 /* NavigationController.swift */; };
+		474506FE245CD925005B4440 /* NetworkExercicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474506FD245CD925005B4440 /* NetworkExercicesViewController.swift */; };
 		47AE7AD72446AAA80093C604 /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AE7AD62446AAA80093C604 /* TableController.swift */; };
 		47CDCB442438ECF4002AC858 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CDCB432438ECF4002AC858 /* AppDelegate.swift */; };
 		47CDCB462438ECF4002AC858 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CDCB452438ECF4002AC858 /* SceneDelegate.swift */; };
@@ -101,6 +102,7 @@
 		473EA60D244D1A4F0021E9E6 /* Tiger.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Tiger.plist; sourceTree = "<group>"; };
 		4741C371243D545D00285342 /* ColorSliderMixerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSliderMixerController.swift; sourceTree = "<group>"; };
 		4741C373243D734100285342 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		474506FD245CD925005B4440 /* NetworkExercicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkExercicesViewController.swift; sourceTree = "<group>"; };
 		47AE7AD62446AAA80093C604 /* TableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
 		47CDCB402438ECF4002AC858 /* ClickCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47CDCB432438ECF4002AC858 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -262,6 +264,42 @@
 			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
+		474506FC245CD8FB005B4440 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				474506FD245CD925005B4440 /* NetworkExercicesViewController.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		474506FF245CD99D005B4440 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				47CDCB432438ECF4002AC858 /* AppDelegate.swift */,
+				47CDCB452438ECF4002AC858 /* SceneDelegate.swift */,
+				47CDCB492438ECF4002AC858 /* Main.storyboard */,
+				47CDCB4C2438ECF5002AC858 /* Assets.xcassets */,
+				47CDCB4E2438ECF5002AC858 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		47450700245CD9D7005B4440 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				474506FC245CD8FB005B4440 /* Network */,
+				473EA5E5244D06C90021E9E6 /* MYO */,
+				47AE7AD52446AA740093C604 /* Tables */,
+				470C3699244270D300BF3F36 /* Navigation */,
+				470C3698244270B500BF3F36 /* ColorMixer */,
+				470C36972442706000BF3F36 /* ClickCounter */,
+				470C36892440D8F600BF3F36 /* TextDelelegate */,
+				470C3666243EB36C00BF3F36 /* Roshambo */,
+				470C3661243E978100BF3F36 /* RollDice */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		47AE7AD52446AA740093C604 /* Tables */ = {
 			isa = PBXGroup;
 			children = (
@@ -294,19 +332,8 @@
 		47CDCB422438ECF4002AC858 /* ClickCounter */ = {
 			isa = PBXGroup;
 			children = (
-				473EA5E5244D06C90021E9E6 /* MYO */,
-				47AE7AD52446AA740093C604 /* Tables */,
-				470C3699244270D300BF3F36 /* Navigation */,
-				470C3698244270B500BF3F36 /* ColorMixer */,
-				470C36972442706000BF3F36 /* ClickCounter */,
-				470C36892440D8F600BF3F36 /* TextDelelegate */,
-				470C3666243EB36C00BF3F36 /* Roshambo */,
-				470C3661243E978100BF3F36 /* RollDice */,
-				47CDCB432438ECF4002AC858 /* AppDelegate.swift */,
-				47CDCB452438ECF4002AC858 /* SceneDelegate.swift */,
-				47CDCB492438ECF4002AC858 /* Main.storyboard */,
-				47CDCB4C2438ECF5002AC858 /* Assets.xcassets */,
-				47CDCB4E2438ECF5002AC858 /* LaunchScreen.storyboard */,
+				47450700245CD9D7005B4440 /* Controller */,
+				474506FF245CD99D005B4440 /* View */,
 				47CDCB512438ECF5002AC858 /* Info.plist */,
 			);
 			path = ClickCounter;
@@ -500,6 +527,7 @@
 				47AE7AD72446AAA80093C604 /* TableController.swift in Sources */,
 				470C36902440D9A800BF3F36 /* TextDelegateController.swift in Sources */,
 				470C368B2440D91800BF3F36 /* EmojiTextFieldDelegate.swift in Sources */,
+				474506FE245CD925005B4440 /* NetworkExercicesViewController.swift in Sources */,
 				470C369624410CF700BF3F36 /* ChashTextFieldDelegate.swift in Sources */,
 				470C368D2440D94000BF3F36 /* ColorizerTextFieldDelegate.swift in Sources */,
 				472B7A252447B5BC000A79D9 /* VillansViewController.swift in Sources */,
