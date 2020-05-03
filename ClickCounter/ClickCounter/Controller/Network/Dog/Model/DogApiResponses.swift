@@ -12,3 +12,13 @@ struct DogImage: Codable {
     let status: String?
     let message: String?
 }
+
+struct BreedListResponse: Codable {
+    let status: String?
+    let message: [String: [String]]
+}
+
+struct BreedDogResponse: Codable {
+    let status: String?
+    let message: [String]?
+}

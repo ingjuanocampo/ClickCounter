@@ -10,41 +10,51 @@ import Foundation
 
 class DogAPI {
     
-    enum Endpoint: String {
-        case randomImageFromAllDogsCollections = "https://dog.ceo/api/breeds/image/random"
+    enum Endpoint {
+        
+        case randomImageFromAllDogsCollections
+        case randomImageForBreed(String)
+        case listAllBreeds
         
         var url: URL {
-            return URL(string: self.rawValue)!
+            return URL(string: self.stringValue)!
+        }
+        
+        var stringValue: String {
+            switch self {
+            case .randomImageFromAllDogsCollections:
+                return "https://dog.ceo/api/breeds/image/random"
+            case .randomImageForBreed(let breed):
+                return "https://dog.ceo/api/breed/\(breed)/images"
+            case .listAllBreeds:
+                return "https://dog.ceo/api/breeds/list/all"
+            }
         }
     }
     
-    class func requestRandomImage(completionHanlder: @escaping (DogImage?, Error?)-> Void) {
+    class func getAllBreeds(completionHanlder: @escaping ([String]?, Error?) -> Void) {
         
-        let randomImageEndpoint = DogAPI.Endpoint.randomImageFromAllDogsCollections.url
-        
-        let task = URLSession.shared.dataTask(with: randomImageEndpoint) {data,_,error in
-            guard let data = data else {
+        func handleBreedListResponse(breedListResponse: BreedListResponse?, error: Error?) {
+            guard let breedListResponse = breedListResponse else {
                 completionHanlder(nil, error)
                 return
             }
-            do {
-                /*let json = try JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
-                let url = json["message"] as! String
-                self.imageView.showUrlImage(url: url) Classic serialization method*/
-                
-                let decoder = JSONDecoder()
-                let dogImage = try decoder.decode(DogImage.self, from: data)
-                
-                completionHanlder(dogImage, nil)
-            } catch {
-                completionHanlder(nil, error)
-            }
+            let breedList = breedListResponse.message.keys.map({ key in return key })
+            completionHanlder(breedList, nil)
         }
-        
-        task.resume()
-        
+        executeRequest(endPoint: Endpoint.listAllBreeds.url, completionHanlder: handleBreedListResponse(breedListResponse:error:))
     }
     
+    class func requestRandomImage(completionHanlder: @escaping (DogImage?, Error?)-> Void) {
+        executeRequest(endPoint: DogAPI.Endpoint.randomImageFromAllDogsCollections.url,
+                     completionHanlder: completionHanlder)
+    }
+    
+    class func requestBreedImage(breed: String, completionHanlder: @escaping (BreedDogResponse?, Error?)-> Void) {
+        executeRequest(endPoint: DogAPI.Endpoint.randomImageForBreed(breed).url,
+                          completionHanlder: completionHanlder)
+        
+    }
 }
 
 

@@ -47,7 +47,7 @@
 		47450703245DC4E4005B4440 /* DogRandomImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47450702245DC4E4005B4440 /* DogRandomImageViewController.swift */; };
 		47450706245DC594005B4440 /* DogAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47450705245DC594005B4440 /* DogAPI.swift */; };
 		47450709245E0B19005B4440 /* ImageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47450708245E0B19005B4440 /* ImageUtils.swift */; };
-		4745070B245E0C9E005B4440 /* DogImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4745070A245E0C9E005B4440 /* DogImage.swift */; };
+		4745070B245E0C9E005B4440 /* DogApiResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4745070A245E0C9E005B4440 /* DogApiResponses.swift */; };
 		4745070D245E1420005B4440 /* ApiUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4745070C245E1420005B4440 /* ApiUtils.swift */; };
 		47AE7AD72446AAA80093C604 /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AE7AD62446AAA80093C604 /* TableController.swift */; };
 		47CDCB442438ECF4002AC858 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CDCB432438ECF4002AC858 /* AppDelegate.swift */; };
@@ -59,6 +59,7 @@
 		47CDCB5B2438ECF5002AC858 /* ClickCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CDCB5A2438ECF5002AC858 /* ClickCounterTests.swift */; };
 		47CDCB662438ECF5002AC858 /* ClickCounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CDCB652438ECF5002AC858 /* ClickCounterUITests.swift */; };
 		47CDCB74243921DD002AC858 /* ColorMixerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CDCB73243921DD002AC858 /* ColorMixerController.swift */; };
+		47DFCA8E245F25FF0090B6F2 /* BreedSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DFCA8D245F25FF0090B6F2 /* BreedSelectorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,7 +112,7 @@
 		47450702245DC4E4005B4440 /* DogRandomImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogRandomImageViewController.swift; sourceTree = "<group>"; };
 		47450705245DC594005B4440 /* DogAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogAPI.swift; sourceTree = "<group>"; };
 		47450708245E0B19005B4440 /* ImageUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUtils.swift; sourceTree = "<group>"; };
-		4745070A245E0C9E005B4440 /* DogImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImage.swift; sourceTree = "<group>"; };
+		4745070A245E0C9E005B4440 /* DogApiResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogApiResponses.swift; sourceTree = "<group>"; };
 		4745070C245E1420005B4440 /* ApiUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUtils.swift; sourceTree = "<group>"; };
 		47AE7AD62446AAA80093C604 /* TableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
 		47CDCB402438ECF4002AC858 /* ClickCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +130,7 @@
 		47CDCB652438ECF5002AC858 /* ClickCounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickCounterUITests.swift; sourceTree = "<group>"; };
 		47CDCB672438ECF5002AC858 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47CDCB73243921DD002AC858 /* ColorMixerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorMixerController.swift; sourceTree = "<group>"; };
+		47DFCA8D245F25FF0090B6F2 /* BreedSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedSelectorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -317,6 +319,7 @@
 			children = (
 				47450704245DC57D005B4440 /* Model */,
 				47450702245DC4E4005B4440 /* DogRandomImageViewController.swift */,
+				47DFCA8D245F25FF0090B6F2 /* BreedSelectorViewController.swift */,
 			);
 			path = Dog;
 			sourceTree = "<group>";
@@ -325,7 +328,7 @@
 			isa = PBXGroup;
 			children = (
 				47450705245DC594005B4440 /* DogAPI.swift */,
-				4745070A245E0C9E005B4440 /* DogImage.swift */,
+				4745070A245E0C9E005B4440 /* DogApiResponses.swift */,
 				4745070C245E1420005B4440 /* ApiUtils.swift */,
 			);
 			path = Model;
@@ -560,7 +563,7 @@
 				470C3665243E981100BF3F36 /* DiceViewController.swift in Sources */,
 				473EA5F3244D07390021E9E6 /* (null) in Sources */,
 				473EA601244D12A00021E9E6 /* StoryNodeViewController.swift in Sources */,
-				4745070B245E0C9E005B4440 /* DogImage.swift in Sources */,
+				4745070B245E0C9E005B4440 /* DogApiResponses.swift in Sources */,
 				47450709245E0B19005B4440 /* ImageUtils.swift in Sources */,
 				470C3694244103AA00BF3F36 /* ZipcodeTextFieldDelegate.swift in Sources */,
 				47450706245DC594005B4440 /* DogAPI.swift in Sources */,
@@ -572,6 +575,7 @@
 				470C368B2440D91800BF3F36 /* EmojiTextFieldDelegate.swift in Sources */,
 				474506FE245CD925005B4440 /* NetworkExercicesViewController.swift in Sources */,
 				470C369624410CF700BF3F36 /* ChashTextFieldDelegate.swift in Sources */,
+				47DFCA8E245F25FF0090B6F2 /* BreedSelectorViewController.swift in Sources */,
 				470C368D2440D94000BF3F36 /* ColorizerTextFieldDelegate.swift in Sources */,
 				472B7A252447B5BC000A79D9 /* VillansViewController.swift in Sources */,
 				4745070D245E1420005B4440 /* ApiUtils.swift in Sources */,

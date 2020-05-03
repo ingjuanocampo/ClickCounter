@@ -24,3 +24,24 @@ func requestImageFile(url: String, completionHandler: @escaping (Data?, Error?)-
            task.resume()
     
 }
+
+func executeRequest<T: Decodable>(endPoint: URL, completionHanlder: @escaping (T?, Error?)-> Void) {
+              
+       let task = URLSession.shared.dataTask(with: endPoint) { data,_,error in
+           guard let data = data else {
+               completionHanlder(nil, error)
+               return
+           }
+           do {
+               let decoder = JSONDecoder()
+            let dogImage = try decoder.decode(T.self, from: data)
+               
+               completionHanlder(dogImage, nil)
+           } catch {
+               completionHanlder(nil, error)
+           }
+       }
+       
+       task.resume()
+       
+   }
