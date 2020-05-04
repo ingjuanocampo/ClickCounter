@@ -33,8 +33,8 @@ class DogAPI {
     }
     
     class func getAllBreeds(completionHanlder: @escaping ([String]?, Error?) -> Void) {
-        
-        func handleBreedListResponse(breedListResponse: BreedListResponse?, error: Error?) {
+                
+        func mapResponse(breedListResponse: BreedListResponse?, error: Error?) {
             guard let breedListResponse = breedListResponse else {
                 completionHanlder(nil, error)
                 return
@@ -42,7 +42,7 @@ class DogAPI {
             let breedList = breedListResponse.message.keys.map({ key in return key })
             completionHanlder(breedList, nil)
         }
-        executeRequest(endPoint: Endpoint.listAllBreeds.url, completionHanlder: handleBreedListResponse(breedListResponse:error:))
+        executeRequest(endPoint: Endpoint.listAllBreeds.url, completionHanlder: mapResponse(breedListResponse:error:))
     }
     
     class func requestRandomImage(completionHanlder: @escaping (DogImage?, Error?)-> Void) {
