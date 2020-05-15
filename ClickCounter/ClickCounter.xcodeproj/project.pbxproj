@@ -50,6 +50,7 @@
 		4745070B245E0C9E005B4440 /* DogApiResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4745070A245E0C9E005B4440 /* DogApiResponses.swift */; };
 		4745070D245E1420005B4440 /* ApiUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4745070C245E1420005B4440 /* ApiUtils.swift */; };
 		47AE7AD72446AAA80093C604 /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AE7AD62446AAA80093C604 /* TableController.swift */; };
+		47C5D0D3246E329700C0C01E /* GCDController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C5D0D2246E329700C0C01E /* GCDController.swift */; };
 		47CDCB442438ECF4002AC858 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CDCB432438ECF4002AC858 /* AppDelegate.swift */; };
 		47CDCB462438ECF4002AC858 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CDCB452438ECF4002AC858 /* SceneDelegate.swift */; };
 		47CDCB482438ECF4002AC858 /* ClickCounterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CDCB472438ECF4002AC858 /* ClickCounterController.swift */; };
@@ -115,6 +116,7 @@
 		4745070A245E0C9E005B4440 /* DogApiResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogApiResponses.swift; sourceTree = "<group>"; };
 		4745070C245E1420005B4440 /* ApiUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUtils.swift; sourceTree = "<group>"; };
 		47AE7AD62446AAA80093C604 /* TableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
+		47C5D0D2246E329700C0C01E /* GCDController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDController.swift; sourceTree = "<group>"; };
 		47CDCB402438ECF4002AC858 /* ClickCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47CDCB432438ECF4002AC858 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47CDCB452438ECF4002AC858 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -301,6 +303,7 @@
 		47450700245CD9D7005B4440 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				47C5D0D1246E31D200C0C01E /* GCD */,
 				474506FC245CD8FB005B4440 /* Network */,
 				473EA5E5244D06C90021E9E6 /* MYO */,
 				47AE7AD52446AA740093C604 /* Tables */,
@@ -349,6 +352,14 @@
 				47AE7AD62446AAA80093C604 /* TableController.swift */,
 			);
 			path = Tables;
+			sourceTree = "<group>";
+		};
+		47C5D0D1246E31D200C0C01E /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				47C5D0D2246E329700C0C01E /* GCDController.swift */,
+			);
+			path = GCD;
 			sourceTree = "<group>";
 		};
 		47CDCB372438ECF4002AC858 = {
@@ -578,6 +589,7 @@
 				47DFCA8E245F25FF0090B6F2 /* BreedSelectorViewController.swift in Sources */,
 				470C368D2440D94000BF3F36 /* ColorizerTextFieldDelegate.swift in Sources */,
 				472B7A252447B5BC000A79D9 /* VillansViewController.swift in Sources */,
+				47C5D0D3246E329700C0C01E /* GCDController.swift in Sources */,
 				4745070D245E1420005B4440 /* ApiUtils.swift in Sources */,
 				473EA606244D17A20021E9E6 /* Adventure.swift in Sources */,
 				470C36922440E11E00BF3F36 /* RandomColorTextFieldDelegate.swift in Sources */,
