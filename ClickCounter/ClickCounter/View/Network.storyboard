@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wDY-qs-LkI">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="ljb-76-cus">
+            <objects>
+                <navigationController id="wDY-qs-LkI" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="k2r-H5-UIg"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mwF-eX-Dvf">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="zYz-Jj-qzF" kind="relationship" relationship="rootViewController" id="NJz-Ur-hE6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oOb-Zd-Mpd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="180" y="5331"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Xwi-ih-H2w">
+            <objects>
+                <viewController id="zYz-Jj-qzF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ymz-CE-Crk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="37x-9V-cwg">
+                                <rect key="frame" x="8" y="88" width="398" height="106"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N5U-qh-bZN">
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="30"/>
+                                        <state key="normal" title="Network Image request"/>
+                                        <connections>
+                                            <segue destination="7z8-Vb-cay" kind="show" id="HQh-xf-xt7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QaF-cA-mK5">
+                                        <rect key="frame" x="0.0" y="38" width="398" height="30"/>
+                                        <state key="normal" title="Dogs App"/>
+                                        <connections>
+                                            <segue destination="BMS-Co-yPm" kind="show" id="nQQ-Lj-HhT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXC-un-9fh">
+                                        <rect key="frame" x="0.0" y="76" width="398" height="30"/>
+                                        <state key="normal" title="Dogs breed list "/>
+                                        <connections>
+                                            <segue destination="vDz-N6-pTW" kind="show" id="Xht-2S-CPG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="37x-9V-cwg" firstAttribute="top" secondItem="fVO-so-nz2" secondAttribute="top" id="1mC-KW-Cmm"/>
+                            <constraint firstItem="fVO-so-nz2" firstAttribute="trailing" secondItem="37x-9V-cwg" secondAttribute="trailing" constant="8" id="B0f-y9-hsU"/>
+                            <constraint firstItem="37x-9V-cwg" firstAttribute="leading" secondItem="fVO-so-nz2" secondAttribute="leading" constant="8" id="iIQ-ej-rEG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fVO-so-nz2"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xUC-mL-NF9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JXZ-8E-Uoe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="886" y="5334"/>
+        </scene>
+        <!--Network Exercices View Controller-->
+        <scene sceneID="3wB-H2-FTe">
+            <objects>
+                <viewController storyboardIdentifier="NetworkStoryBoard" id="7z8-Vb-cay" customClass="NetworkExercicesViewController" customModule="ClickCounter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WKy-sH-vfq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="R9N-6h-7NH">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LJ4-a6-KR4">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGJ-7F-BdP">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="zAo-B9-qlJ"/>
+                                                </constraints>
+                                                <state key="normal" title="Http request"/>
+                                                <connections>
+                                                    <action selector="onRequestPressed:" destination="7z8-Vb-cay" eventType="touchUpInside" id="dwT-Jy-ouc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVE-Vj-3nj">
+                                                <rect key="frame" x="0.0" y="60" width="414" height="60"/>
+                                                <state key="normal" title="Download request"/>
+                                                <connections>
+                                                    <action selector="onDownloadPressed:" destination="7z8-Vb-cay" eventType="touchUpInside" id="V8U-x9-jcW"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="VGJ-7F-BdP" firstAttribute="width" secondItem="MVE-Vj-3nj" secondAttribute="width" id="g5Y-Us-SMW"/>
+                                            <constraint firstItem="VGJ-7F-BdP" firstAttribute="height" secondItem="MVE-Vj-3nj" secondAttribute="height" id="t8c-Mi-8xA"/>
+                                        </constraints>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="Xqt-ee-Fmx">
+                                        <rect key="frame" x="0.0" y="120" width="414" height="654"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rEf-5w-74e" firstAttribute="bottom" secondItem="R9N-6h-7NH" secondAttribute="bottom" id="65j-pe-iFh"/>
+                            <constraint firstItem="R9N-6h-7NH" firstAttribute="top" secondItem="rEf-5w-74e" secondAttribute="top" id="Rfg-BZ-BQY"/>
+                            <constraint firstItem="R9N-6h-7NH" firstAttribute="leading" secondItem="rEf-5w-74e" secondAttribute="leading" id="fsl-zW-WiG"/>
+                            <constraint firstItem="rEf-5w-74e" firstAttribute="trailing" secondItem="R9N-6h-7NH" secondAttribute="trailing" id="oDA-t7-vkc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rEf-5w-74e"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mpJ-0H-KU4"/>
+                    <connections>
+                        <outlet property="imageView" destination="Xqt-ee-Fmx" id="b2u-dH-Wcl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dlf-9k-gB5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1613" y="5334"/>
+        </scene>
+        <!--Random Dog Image-->
+        <scene sceneID="NHL-1d-jxe">
+            <objects>
+                <viewController id="BMS-Co-yPm" customClass="DogRandomImageViewController" customModule="ClickCounter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="78c-lZ-EGT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lfu-6R-HdV">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lfu-6R-HdV" firstAttribute="width" secondItem="BgE-2v-Xt5" secondAttribute="width" id="9CI-ES-XsZ"/>
+                            <constraint firstItem="lfu-6R-HdV" firstAttribute="centerX" secondItem="BgE-2v-Xt5" secondAttribute="centerX" id="C58-hd-aCr"/>
+                            <constraint firstItem="lfu-6R-HdV" firstAttribute="height" secondItem="BgE-2v-Xt5" secondAttribute="height" id="Y8U-Lv-NV1"/>
+                            <constraint firstItem="lfu-6R-HdV" firstAttribute="centerY" secondItem="BgE-2v-Xt5" secondAttribute="centerY" id="vvl-LJ-wAA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BgE-2v-Xt5"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Random Dog Image" id="MPF-pv-2E0"/>
+                    <connections>
+                        <outlet property="imageView" destination="lfu-6R-HdV" id="v2b-hZ-ylc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qhj-2R-CZU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2322" y="5338"/>
+        </scene>
+        <!--Breed selection-->
+        <scene sceneID="3Iz-Ew-Y9A">
+            <objects>
+                <viewController id="vDz-N6-pTW" customClass="BreedSelectorViewController" customModule="ClickCounter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kSE-uR-wls">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cCe-V9-FiO">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="sgI-Wq-hGb">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="216"/>
+                                    </pickerView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="KRH-dn-20B">
+                                        <rect key="frame" x="0.0" y="224" width="414" height="550"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cCe-V9-FiO" firstAttribute="top" secondItem="JCP-Kl-vlu" secondAttribute="top" id="OGR-IF-dOe"/>
+                            <constraint firstItem="JCP-Kl-vlu" firstAttribute="bottom" secondItem="cCe-V9-FiO" secondAttribute="bottom" id="Vsx-Wu-KOH"/>
+                            <constraint firstItem="cCe-V9-FiO" firstAttribute="leading" secondItem="JCP-Kl-vlu" secondAttribute="leading" id="XNj-Mh-BY0"/>
+                            <constraint firstItem="JCP-Kl-vlu" firstAttribute="trailing" secondItem="cCe-V9-FiO" secondAttribute="trailing" id="uWa-dk-t5N"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JCP-Kl-vlu"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Breed selection" id="Odc-w3-iiX"/>
+                    <connections>
+                        <outlet property="imageView" destination="KRH-dn-20B" id="kRk-Jc-0Wm"/>
+                        <outlet property="pickerView" destination="sgI-Wq-hGb" id="IM1-s0-tFc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CKI-wI-jxl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2990" y="5338"/>
+        </scene>
+    </scenes>
+</document>
